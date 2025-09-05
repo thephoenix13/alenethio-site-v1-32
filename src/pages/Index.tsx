@@ -1,6 +1,7 @@
 
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import HeroBooking from '@/components/HeroBooking';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Car, Truck, Users, Shield, Clock, MapPin, Star, Download, Smartphone, TrendingUp, ArrowRight } from 'lucide-react';
@@ -10,58 +11,9 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      {/* Hero Section - Enhanced readability */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <div className="absolute inset-0 opacity-20">
-          <div className="w-full h-full" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}></div>
-        </div>
-        
-        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-          <div className="max-w-4xl">
-            <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
-              <span className="text-white">Go anywhere with</span>
-              <span className="block text-blue-400 mt-2">
-                Alen Express
-              </span>
-            </h1>
-            <p className="text-xl lg:text-2xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
-              Request a ride, get driven, or deliver anything across Ethiopia. Always ready, always reliable.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button size="lg" className="text-lg px-8 py-6 bg-white text-black hover:bg-gray-100 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all">
-                <Download className="mr-3 h-6 w-6" />
-                Get the app
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-2 border-white text-white hover:bg-white hover:text-black rounded-xl font-semibold transition-all">
-                <Car className="mr-3 h-6 w-6" />
-                Drive with us
-              </Button>
-            </div>
-
-            {/* Quick Stats */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-8 border-t border-white/20">
-              <div className="text-center lg:text-left">
-                <div className="text-3xl lg:text-4xl font-bold text-white mb-1">100+</div>
-                <div className="text-gray-400 text-sm uppercase tracking-wide">Downloads</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-3xl lg:text-4xl font-bold text-white mb-1">10+</div>
-                <div className="text-gray-400 text-sm uppercase tracking-wide">Cities</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-3xl lg:text-4xl font-bold text-white mb-1">500+</div>
-                <div className="text-gray-400 text-sm uppercase tracking-wide">Customers</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-3xl lg:text-4xl font-bold text-white mb-1">50+</div>
-                <div className="text-gray-400 text-sm uppercase tracking-wide">Drivers</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Hero Section - Booking Form */}
+      <section className="py-8">
+        <HeroBooking />
       </section>
 
       {/* Services Section - Clean Cards */}
