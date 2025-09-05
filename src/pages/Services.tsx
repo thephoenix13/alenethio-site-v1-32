@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import PageHero from '@/components/PageHero';
-import { Car, Truck, Users, Clock, MapPin, Shield, CreditCard, Smartphone } from 'lucide-react';
+import { Car, Truck, Users, Clock, Shield, CreditCard, Smartphone, FileText, CheckCircle } from 'lucide-react';
 
 const Services = () => {
   return (
@@ -34,15 +34,19 @@ const Services = () => {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <span className="text-muted-foreground">Economy rides</span>
+                    <span className="text-muted-foreground">AlenX rides</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <span className="text-muted-foreground">Premium vehicles</span>
+                    <span className="text-muted-foreground">AlenXL vehicles</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <span className="text-muted-foreground">Airport transfers</span>
+                    <span className="text-muted-foreground">Alen Mini-VAN</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    <span className="text-muted-foreground">Alen VAN</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
@@ -67,19 +71,19 @@ const Services = () => {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-muted-foreground">Same-day delivery</span>
+                    <span className="text-muted-foreground">Alen Priority: Delivery within 2 hours</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-muted-foreground">Food delivery</span>
+                    <span className="text-muted-foreground">Alen Express: Delivery within 6 hours</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-muted-foreground">Package delivery</span>
+                    <span className="text-muted-foreground">Alen Standard: Delivery within 24 hours</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-muted-foreground">Business deliveries</span>
+                    <span className="text-muted-foreground">Alen Business: Business-to-business deliveries</span>
                   </div>
                 </div>
                 <Button className="w-full mt-6">Send Package</Button>
@@ -122,58 +126,119 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Payment Options & Requirements Section */}
       <section className="py-20 lg:py-28 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              Service Features
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Advanced features that make our services reliable and convenient
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Payment Options */}
+            <Card className="border-0 shadow-lg">
+              <CardHeader className="pb-8">
+                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                  <CreditCard className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle className="text-3xl font-bold mb-3">Payment Options</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span className="text-muted-foreground">Mobile Wallet (telebirr & Mpesa)</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span className="text-muted-foreground">Bank transfer</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span className="text-muted-foreground">Cash payment</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Driver Requirements Overview */}
+            <Card className="border-0 shadow-lg">
+              <CardHeader className="pb-8">
+                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                  <FileText className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle className="text-3xl font-bold mb-3">Driver Requirements</CardTitle>
+                <CardDescription className="text-lg text-muted-foreground leading-relaxed">
+                  Simple requirements to get started as an Alen Express driver
+                </CardDescription>
+              </CardHeader>
+            </Card>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-primary/10 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
-                <Clock className="h-10 w-10 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Real-time Tracking</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Track your ride or delivery in real-time with GPS technology
-              </p>
-            </div>
+        </div>
+      </section>
 
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-primary/10 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
-                <Shield className="h-10 w-10 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Safety First</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Comprehensive safety measures and verified driver background checks
-              </p>
-            </div>
+      {/* Detailed Requirements Section */}
+      <section className="py-20 lg:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Vehicle Requirements */}
+            <Card className="border-0 shadow-lg">
+              <CardHeader className="pb-8">
+                <div className="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6">
+                  <Car className="h-8 w-8 text-blue-500" />
+                </div>
+                <CardTitle className="text-3xl font-bold mb-3">Vehicle Requirements</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-blue-500" />
+                    <span className="text-muted-foreground">Vehicle registered in Ethiopia</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-blue-500" />
+                    <span className="text-muted-foreground">Valid vehicle insurance</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-blue-500" />
+                    <span className="text-muted-foreground">4-door vehicle in good condition</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-blue-500" />
+                    <span className="text-muted-foreground">Vehicle inspection certificate</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
 
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-primary/10 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
-                <CreditCard className="h-10 w-10 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Secure Payments</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Multiple payment options with bank-level security
-              </p>
-            </div>
-
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-primary/10 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
-                <Smartphone className="h-10 w-10 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Mobile Apps</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Easy-to-use mobile apps for both customers and drivers
-              </p>
-            </div>
+            {/* Driver Requirements */}
+            <Card className="border-0 shadow-lg">
+              <CardHeader className="pb-8">
+                <div className="w-16 h-16 bg-green-500/10 rounded-2xl flex items-center justify-center mb-6">
+                  <Users className="h-8 w-8 text-green-500" />
+                </div>
+                <CardTitle className="text-3xl font-bold mb-3">Driver Requirements</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-500" />
+                    <span className="text-muted-foreground">TIN & Trade registered Certificate</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-500" />
+                    <span className="text-muted-foreground">Valid Ethiopian driver's license</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-500" />
+                    <span className="text-muted-foreground">Vehicle Foto</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-500" />
+                    <span className="text-muted-foreground">Bank Account number</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-500" />
+                    <span className="text-muted-foreground">ውክልና (Representation)</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
