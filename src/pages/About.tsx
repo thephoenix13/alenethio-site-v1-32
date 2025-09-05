@@ -12,7 +12,7 @@ const About = () => {
       
       <PageHero 
         title="About Alen Express"
-        subtitle="Revolutionizing transportation and delivery services across Ethiopia with innovation, reliability, and a commitment to excellence."
+        subtitle="Alen Ethiopia Express makes transportation easy in Ethiopia. We provide delivery, taxi, and corporate services through a smart digital platform. Our system is safe, reliable, and built to serve many users. The platform has two parts: one for customers to book services and one for drivers to manage rides. Behind the scenes, our system keeps everything connected, secure, and running smoothly."
       />
 
       {/* Mission & Vision Section */}
@@ -28,7 +28,7 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-lg text-muted-foreground leading-relaxed">
-                  To provide reliable, safe, and convenient transportation and delivery services that connect communities across Ethiopia, empowering people to move freely and businesses to thrive.
+                  The primary objective of Alen Ethiopia Express is to support businesses in their growth by offering streamlined ride-hailing and delivery services without any additional charges. Alen Ethiopia Express strives to simplify the transportation of people and goods within Addis Ababa, Ethiopia. Our mission is to provide reliable, safe, and convenient transportation and delivery solutions that connect communities across Ethiopia, empowering individuals to move freely and enabling businesses to thrive. Alen offers the best platform to accomplish this goal.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -42,7 +42,7 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-lg text-muted-foreground leading-relaxed">
-                  To become Ethiopia's leading mobility platform, transforming how people and goods move throughout the country while creating economic opportunities for drivers and businesses.
+                  Alen Ethiopia Express aims to become Ethiopia's leading mobility platform, transforming the way people and goods move across the country while creating economic opportunities for drivers and businesses. Our goal is to establish Alen Ethiopia Express as the most trusted and respected provider of ride-hailing taxi and logistics services in Addis Ababa. We strive to optimize transportation operations in the city by offering an efficient platform that connects customers with drivers, ensuring timely, reliable, and cost-effective transportation services.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -96,38 +96,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20 lg:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              Meet Our Team
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Passionate professionals working to revolutionize transportation in Ethiopia
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((member) => (
-              <Card key={member} className="border-0 shadow-lg text-center">
-                <CardHeader className="pb-6">
-                  <div className="w-24 h-24 bg-gradient-to-br from-primary/20 to-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Users className="h-12 w-12 text-primary" />
-                  </div>
-                  <CardTitle className="text-xl font-bold">Team Member {member}</CardTitle>
-                  <CardDescription className="text-muted-foreground">Position Title</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Passionate about creating innovative solutions for transportation challenges in Ethiopia.
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>
