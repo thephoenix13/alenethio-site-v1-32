@@ -16,6 +16,7 @@ import TaxiBooking from "./pages/TaxiBooking";
 import CustomerRegistration from "./pages/CustomerRegistration";
 import AgentRegistration from "./pages/AgentRegistration";
 import LandingPage from "./pages/LandingPage";
+import TermsAndConditions from "./pages/TermsAndConditions";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/customer-registration" element={<CustomerRegistration />} />
           <Route path="/agent-registration" element={<AgentRegistration />} />
           <Route path="/landing" element={<LandingPage />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

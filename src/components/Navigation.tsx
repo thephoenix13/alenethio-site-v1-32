@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Car } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +24,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <Car className="h-8 w-8 text-primary" />
+            <img 
+              src="/lovable-uploads/7d3733b4-7c3c-4b0f-a2ff-bbb0daf6b286.png" 
+              alt="Alen Express Logo" 
+              className="h-8 w-auto"
+            />
             <span className="text-xl font-bold text-foreground">Alen Express</span>
           </Link>
 

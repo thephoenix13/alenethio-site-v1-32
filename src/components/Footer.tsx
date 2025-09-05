@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Car, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
@@ -11,7 +11,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Car className="h-8 w-8 text-primary" />
+              <img 
+                src="/lovable-uploads/7d3733b4-7c3c-4b0f-a2ff-bbb0daf6b286.png" 
+                alt="Alen Express Logo" 
+                className="h-8 w-auto"
+              />
               <span className="text-xl font-bold text-foreground">Alen Express</span>
             </div>
             <p className="text-muted-foreground">
@@ -84,7 +88,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-6 text-sm">
               <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link>
-              <Link to="/terms" className="text-muted-foreground hover:text-primary transition-colors">Terms of Service</Link>
+              <Link to="/terms-and-conditions" className="text-muted-foreground hover:text-primary transition-colors">Terms & Conditions</Link>
               <Link to="/support" className="text-muted-foreground hover:text-primary transition-colors">Support</Link>
             </div>
           </div>
