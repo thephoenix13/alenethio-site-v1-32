@@ -126,51 +126,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Payment Options & Requirements Section */}
-      <section className="py-20 lg:py-28 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Payment Options */}
-            <Card className="border-0 shadow-lg">
-              <CardHeader className="pb-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
-                  <CreditCard className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle className="text-3xl font-bold mb-3">Payment Options</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-muted-foreground">Mobile Wallet (telebirr & Mpesa)</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-muted-foreground">Bank transfer</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-muted-foreground">Cash payment</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Driver Requirements Overview */}
-            <Card className="border-0 shadow-lg">
-              <CardHeader className="pb-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
-                  <FileText className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle className="text-3xl font-bold mb-3">Driver Requirements</CardTitle>
-                <CardDescription className="text-lg text-muted-foreground leading-relaxed">
-                  Simple requirements to get started as an Alen Express driver
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          </div>
-        </div>
-      </section>
+  
 
       {/* Detailed Requirements Section */}
       <section className="py-20 lg:py-28">
