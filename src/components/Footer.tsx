@@ -18,17 +18,25 @@ const Footer = () => {
               Transforming transportation across Ethiopia with reliable, efficient, and technology-driven solutions.
             </p>
             <div className="flex space-x-4">
-              <Button variant="ghost" size="icon">
-                <Twitter className="h-5 w-5" />
+              <Button variant="ghost" size="icon" asChild>
+                <a href="https://twitter.com/AlenEthExpress" target="_blank" rel="noopener noreferrer">
+                  <Twitter className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon">
-                <Linkedin className="h-5 w-5" />
+              <Button variant="ghost" size="icon" asChild>
+                <a href="https://www.linkedin.com/in/alen-ethiopia-express-10b48628b/" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon">
-                <Facebook className="h-5 w-5" />
+              <Button variant="ghost" size="icon" asChild>
+                <a href="https://www.facebook.com/AlenEthiopiaExpress" target="_blank" rel="noopener noreferrer">
+                  <Facebook className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon">
-                <Instagram className="h-5 w-5" />
+              <Button variant="ghost" size="icon" asChild>
+                <a href="https://www.instagram.com/alenethiopiaexpress/" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="h-5 w-5" />
+                </a>
               </Button>
             </div>
           </div>
@@ -61,8 +69,9 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-foreground">Contact Us</h3>
             <div className="space-y-2 text-muted-foreground">
               <p>Addis Ababa, Ethiopia</p>
-              <p>Phone: +251-XXX-XXXX</p>
-              <p>Email: info@alenexpress.et</p>
+              <p>Phone: +251-911-123-456</p>
+              <p>Email: info@alenethiopiaexpress.com</p>
+              <p>Website: alenethiopiaexpress.com</p>
               <p>24/7 Customer Support</p>
             </div>
           </div>

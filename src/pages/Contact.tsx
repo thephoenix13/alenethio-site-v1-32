@@ -44,7 +44,11 @@ const Contact = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-2">Send us an email</p>
-                <p className="font-semibold text-lg">support@alenexpress.com</p>
+                <div className="space-y-1">
+                  <p className="font-semibold text-sm">info@alenethiopiaexpress.com</p>
+                  <p className="font-semibold text-sm">support@alenethiopiaexpress.com</p>
+                  <p className="font-semibold text-sm">sales@alenethiopiaexpress.com</p>
+                </div>
               </CardContent>
             </Card>
 
@@ -178,23 +182,37 @@ const Contact = () => {
 
               <Card className="border-0 shadow-lg">
                 <CardHeader>
-                  <CardTitle className="text-2xl font-bold mb-2">Quick Support</CardTitle>
+                  <CardTitle className="text-2xl font-bold mb-2">Connect With Us</CardTitle>
                   <CardDescription>
-                    For immediate assistance, use our in-app support or call our emergency line.
+                    Follow us on social media and visit our website for updates.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
-                    <p className="font-semibold">Driver Support:</p>
-                    <p className="text-muted-foreground">+251 911 234 567</p>
+                    <p className="font-semibold">Website:</p>
+                    <a href="https://alenethiopiaexpress.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      alenethiopiaexpress.com
+                    </a>
                   </div>
                   <div className="space-y-2">
-                    <p className="font-semibold">Customer Support:</p>
-                    <p className="text-muted-foreground">+251 911 345 678</p>
-                  </div>
-                  <div className="space-y-2">
-                    <p className="font-semibold">Emergency Line:</p>
-                    <p className="text-red-600 font-semibold">+251 911 456 789</p>
+                    <p className="font-semibold">Social Media:</p>
+                    <div className="flex flex-col space-y-1 text-sm">
+                      <a href="https://www.facebook.com/AlenEthiopiaExpress" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                        Facebook: AlenEthiopiaExpress
+                      </a>
+                      <a href="https://www.instagram.com/alenethiopiaexpress/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                        Instagram: @alenethiopiaexpress
+                      </a>
+                      <a href="https://twitter.com/AlenEthExpress" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                        Twitter: @AlenEthExpress
+                      </a>
+                      <a href="https://www.linkedin.com/in/alen-ethiopia-express-10b48628b/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                        LinkedIn: Alen Ethiopia Express
+                      </a>
+                      <a href="https://t.me/AlenEthiopiaExpress" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                        Telegram: AlenEthiopiaExpress
+                      </a>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
